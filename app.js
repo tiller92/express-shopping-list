@@ -26,7 +26,7 @@ app.post('/items', function(req, res) {
     console.log(req.body)
     const newItems = req.body
     items.push(newItems)
-    return res.json(items);
+    return res.send(newItems);
 });
 
 // {“name”:”popsicle”, “price”: 1.45} => {“added”: {“name”: “popsicle”, “price”: 1.45}}
